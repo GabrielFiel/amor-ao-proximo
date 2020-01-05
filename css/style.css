@@ -324,6 +324,10 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
+.bold {
+  font-weight: bold;
+}
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300; }
@@ -8460,6 +8464,10 @@ h1, h2, h3, h4, h5,
     @media (max-width: 767.98px) {
       .ftco-volunteer .about-text h2 {
         font-size: 34px; } }
+
+.ftco-mission {
+  margin-top: 150px;
+}
 
 .ftco-mission h3 {
   font-weight: 900; }
