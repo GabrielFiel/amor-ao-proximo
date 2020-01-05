@@ -9232,6 +9232,10 @@ textarea.form-control {
       color: #fff;
       border: 1px solid transparent; }
 
+.contact2-section {
+  margin: 100px 0;
+}
+
 .contact-section .contact-info p {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500; }
