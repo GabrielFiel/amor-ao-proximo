@@ -185,42 +185,32 @@
           <div class="wrapper">
             <div class="row">
               <div
-                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
+                class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate"
               >
                 <div class="block-18 text-center">
                   <div class="text">
-                    <strong class="number" data-number="705">0</strong>
-                    <span>Days in Campaign</span>
+                    <strong id="days-in-project" class="number">0</strong>
+                    <span>Dias de projeto</span>
                   </div>
                 </div>
               </div>
               <div
-                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
+                class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate"
               >
                 <div class="block-18 text-center">
                   <div class="text">
-                    <strong class="number" data-number="809">0</strong>
-                    <span>Dedicated Donors</span>
+                    <strong class="number" data-number="120">0</strong>
+                    <span>lanches por semana</span>
                   </div>
                 </div>
               </div>
               <div
-                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
+                class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate"
               >
                 <div class="block-18 text-center">
                   <div class="text">
-                    <strong class="number" data-number="335">0</strong>
-                    <span>Winning Awards</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
-              >
-                <div class="block-18 text-center">
-                  <div class="text">
-                    <strong class="number" data-number="35">0</strong>
-                    <span>Fun Raised</span>
+                    <strong class="number" data-number="7">0</strong>
+                    <span>voluntários</span>
                   </div>
                 </div>
               </div>
@@ -477,6 +467,17 @@
         />
       </svg>
     </div>
+
+    <script>
+      const date1 = new Date("10/05/2017"); 
+      const date2 = new Date(); 
+      const Difference_In_Time = date2.getTime() - date1.getTime(); 
+
+      // To calculate the no. of days between two dates 
+      const Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+      const el = document.querySelector('#days-in-project');
+      el.setAttribute('data-number', parseInt(Difference_In_Days));
+    </script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
